@@ -1,5 +1,7 @@
 package utils;
 
+import java.io.FileFilter;
+
 /**
  * Created by Макс on 03.06.2015.
  */
@@ -21,6 +23,5 @@ public class Test {
         for (String resFile:findFile.find("D:\\", "", "raw")){
             System.out.println(resFile);
         }
-
     }
 }
