@@ -38,7 +38,6 @@ public class MyFindFilesTask extends MyTask implements FindFilesTask {
 
     public void execute() throws TaskExecutionFailedException {
         try {
-            findUtils = new FindFile();
             if (mask == null || mask == "") {
                 for (String resFile : findUtils.find(path, searchWord)) {
                     System.out.println(resFile);

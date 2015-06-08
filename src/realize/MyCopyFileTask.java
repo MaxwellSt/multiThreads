@@ -15,7 +15,7 @@ public class MyCopyFileTask extends MyTask implements CopyFileTask {
     private String from;
     private String to;
 
-    public MyCopyFileTask(CopyFile copyUtils, String to, String from) {
+    public MyCopyFileTask(CopyFile copyUtils, String from, String to) {
         super();
         this.copyUtils = copyUtils;
         this.to = to;
@@ -23,7 +23,7 @@ public class MyCopyFileTask extends MyTask implements CopyFileTask {
     }
 
     public void setFileCopyUtils(CopyFile copyUtils) {
-
+        this.copyUtils = copyUtils;
     }
 
     public void execute() throws TaskExecutionFailedException {

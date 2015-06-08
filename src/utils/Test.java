@@ -1,5 +1,8 @@
 package utils;
 
+import realize.MyCopyFileTask;
+import realize.MyTask;
+
 import java.io.FileFilter;
 
 /**
@@ -9,19 +12,21 @@ public class Test {
 
     public static void main(String[] args) {
 
-//        CopyFile copyFile = new CopyFile();
-//        copyFile.copy("D:\\Games\\cheat.zip", "D:\\Games\\cheat2.zip");
+        CopyFile copyFile = new CopyFile();
 
-        FindFile findFile = new FindFile();
+        MyTask task5 = new MyCopyFileTask(copyFile, "D:\\Games\\Stronghold.iso.EX.UA.torrent", "D:\\Games\\Stronghold.iso2.torrent");
 
-        for (String resFile:findFile.find("D:\\Games\\", "big")){
-            System.out.println(resFile);
-        }
-
-        System.out.println("******************************************");
-
-        for (String resFile:findFile.find("D:\\", "", "raw")){
-            System.out.println(resFile);
-        }
+//        FindFile findFile = new FindFile();
+//
+//        for (String resFile:findFile.find("D:\\Games\\", "big")){
+//            System.out.println(resFile);
+//        }
+//
+//        System.out.println("******************************************");
+//
+//        for (String resFile:findFile.find("D:\\", "", "raw")){
+//            System.out.println(resFile);
+//        }
+//    }
     }
 }

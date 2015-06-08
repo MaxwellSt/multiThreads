@@ -13,6 +13,10 @@ public class MyTaskExecutor implements Runnable, TaskExecutor {
     private TasksStorage storage;
     private boolean stopFlag = false;
 
+    public MyTaskExecutor(TasksStorage storage) {
+        this.storage = storage;
+    }
+
     public void run() {
         while (!stopFlag) {
             Task task = this.storage.get();
