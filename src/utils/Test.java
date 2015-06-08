@@ -16,5 +16,11 @@ public class Test {
             System.out.println(resFile);
         }
 
+        System.out.println("******************************************");
+
+        for (String resFile2:findFile.find("D:\\Games\\", "", "tgx")){
+            System.out.println(resFile2);
+        }
+
     }
 }
