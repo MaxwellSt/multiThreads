@@ -18,8 +18,8 @@ public class Test {
 
         System.out.println("******************************************");
 
-        for (String resFile2:findFile.find("D:\\Games\\", "", "tgx")){
-            System.out.println(resFile2);
+        for (String resFile:findFile.find("D:\\", "", "raw")){
+            System.out.println(resFile);
         }
 
     }

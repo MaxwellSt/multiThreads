@@ -15,6 +15,10 @@ public class FindFile {
         resultArray = new ArrayList<String>();
 
         File dir = new File(pathToDir);
+
+        if (dir.isFile())
+            return null;
+
         File[] listFiles = dir.listFiles();
 
         if (listFiles == null)
@@ -37,6 +41,10 @@ public class FindFile {
         resultArray = new ArrayList<String>();
 
         File dir = new File(pathToDir);
+
+        if (dir.isFile())
+            return null;
+
         File[] listFiles = dir.listFiles();
 
         if (listFiles == null)
